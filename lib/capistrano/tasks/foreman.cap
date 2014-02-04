@@ -1,5 +1,4 @@
 namespace :foreman do
-
   desc 'Export the Procfile'
   task :export do
     on roles fetch(:foreman_roles) do

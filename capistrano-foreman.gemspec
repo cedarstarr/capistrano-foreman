@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "capistrano-foreman"
   gem.require_paths = ["lib"]
   gem.version       = Capistrano::Foreman::VERSION
+
+  gem.add_dependency 'capistrano', '>= 3.0'
 end
