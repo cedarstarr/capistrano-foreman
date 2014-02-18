@@ -16,5 +16,5 @@ Gem::Specification.new do |gem|
   gem.version       = Capistrano::Foreman::VERSION
 
   gem.add_dependency 'capistrano', '~> 3.0'
-  gem.add_dependency 'capistrano-bundler', '~> 3.0'
+  gem.add_dependency 'capistrano-bundler', '~> 1.1'
 end
