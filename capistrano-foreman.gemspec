@@ -1,5 +1,4 @@
-# -*- encoding: utf-8 -*-
-require File.expand_path('../lib/capistrano/version', __FILE__)
+require File.expand_path('../lib/capistrano-foreman', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Johannes Gorset", "John Bellone"]
