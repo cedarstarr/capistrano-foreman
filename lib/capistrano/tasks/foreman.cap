@@ -51,7 +51,7 @@ end
 
 namespace :load do
   task :defaults do
-    set :bundle_bins, fetch(:bundle_bins, []).push(%w(foreman))
+    set :bundle_bins, fetch(:bundle_bins, []).push('foreman')
     set :foreman_use_sudo, fetch(:foreman_use_sudo, false)
     set :foreman_template, fetch(:foreman_template, 'upstart')
     set :foreman_export_path, fetch(:foreman_export_path, File.join(Dir.home, '.init'))
