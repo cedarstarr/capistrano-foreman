@@ -57,6 +57,5 @@ namespace :load do
     set :foreman_export_path, fetch(:foreman_export_path, File.join(Dir.home, '.init'))
     set :foreman_roles, fetch(:foreman_roles, :all)
     
-    SSHKit.config.command_map.prefix[:foreman].push('sudo') if true
-  end
+    SSHKit.config.command_map.prefix[:foreman].push('sudo') if fetch(:foreman_use_sudo)
 end
